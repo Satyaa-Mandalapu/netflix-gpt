@@ -37,18 +37,6 @@ if(!isSignInForm){
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-    //import { getAuth, updateProfile } from "firebase/auth";
-
-updateProfile(user, {
-displayName: name.current.value, 
-photoURL: "https://example.com/jane-q-user/profile.jpg",
-})
-.then(() => {
-navigate("browser");
-})
-.catch((error) => {
- setError
-});
     console.log (user);
       navigate("/browse")
   })
