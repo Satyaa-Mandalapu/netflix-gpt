@@ -3,8 +3,7 @@ import {signOut } from "firebase/auth";
 import { auth} from '../utils/firebase';
 import { useNavigate} from 'react-router-dom';
 const Header = () => {
-
-  const navigate = useNavigate();
+const navigate = useNavigate();
 const handleSignout = () => {
 
 signOut(auth)
@@ -25,6 +24,13 @@ navigate("/error");
        />
     <div className="flex p-2">
        <img 
+       className= "w-12 h-12"
+       src="https://graphicdesignjunction.com/wp-content/uploads/2018/04/colorful_logo_1.jpg"
+       alt="usericon"
+       />
+       <button onClick={handleSignout}  className="font-bold text-white">(Sign Out)</button>
+    </div>
+    <img 
        className= "w-12 h-12"
        src="https://graphicdesignjunction.com/wp-content/uploads/2018/04/colorful_logo_1.jpg"
        alt="usericon"
