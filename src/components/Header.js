@@ -30,13 +30,6 @@ navigate("/error");
        />
        <button onClick={handleSignout}  className="font-bold text-white">(Sign Out)</button>
     </div>
-    <img 
-       className= "w-12 h-12"
-       src="https://graphicdesignjunction.com/wp-content/uploads/2018/04/colorful_logo_1.jpg"
-       alt="usericon"
-       />
-       <button onClick={handleSignout}  className="font-bold text-white">(Sign Out)</button>
-    </div>
     </div>
   )
 }
